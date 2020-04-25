@@ -150,50 +150,70 @@
 				<f:MenuHeader text = "Inventario" imageResource="{resource.inventario}">
 				</f:MenuHeader>
 			</g:customHeader>
-			<g:LayoutPanel>
-				<g:layer left="0.5em" width="10em" top="0.5em" height="3em">
-					<f:MenuItem contentName="VerBalance" text="Ver Balance" imageResource="{resource.addbalance}"></f:MenuItem>
-				</g:layer>
-				<!-- <g:layer left="0.5em" width="10em" top="2.3em" height="3em">
-					<f:MenuItem contentName="CrearBalance" text="Crear Balance" imageResource="{resource.addbalance}"></f:MenuItem>
-				</g:layer>
-				<g:layer left="0.5em" width="10em" top="4.1em" height="3em">
-					<f:MenuItem contentName="EditarBalance" text="Editar Balance" imageResource="{resource.addbalance}"></f:MenuItem>
-				</g:layer>
-				<g:layer left="0.5em" width="10em" top="5.9em" height="3em">
-					<f:MenuItem contentName="EliminarBalance" text="Eliminar Balance" imageResource="{resource.addbalance}"></f:MenuItem>
-				</g:layer> -->
-				<g:layer left="0.5em" width="10em" top="2.3em" height="3em">
-					<f:MenuItem contentName="VerProveedor" text="Ver Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
-				</g:layer>
-				<!-- <g:layer left="0.5em" width="10em" top="9.5em" height="3em">
-					<f:MenuItem contentName="CrearProveedor" text="Crear Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
-				</g:layer>
-				<g:layer left="0.5em" width="10em" top="11.3em" height="3em">
-					<f:MenuItem contentName="EditarProveedor" text="Editar Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
-				</g:layer>
-				<g:layer left="0.5em" width="12em" top="13.1em" height="3em">
-					<f:MenuItem contentName="EliminarProveedor" text="Eliminar Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
-				</g:layer> -->
-				<g:layer left="0.5em" width="10em" top="4.1em" height="3em">
-					<f:MenuItem contentName="VerSuministro" text="Ver Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
-				</g:layer>
-				<!-- <g:layer left="0.5em" width="10em" top="16.7em" height="3em">
-					<f:MenuItem contentName="CrearSuministro" text="Crear Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
-				</g:layer>
-				<g:layer left="0.5em" width="10em" top="18.5em" height="3em">
-					<f:MenuItem contentName="EditarSuministro" text="Editar Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
-				</g:layer>
-				<g:layer left="0.5em" width="12em" top="20.3em" height="3em">
-					<f:MenuItem contentName="EliminarSuministro" text="Eliminar Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
-				</g:layer> -->
-				<g:layer left="0.5em" width="10em" top="5.9em" height="3em">
-					<f:MenuItem contentName="VerProducto" text="Ver Producto" imageResource="{resource.addproducto}"></f:MenuItem>
-				</g:layer>
-				<g:layer left="0.5em" width="10em" top="7.7em" height="3em">
-					<f:MenuItem contentName="VerTipoProducto" text="Ver TipoProducto" imageResource="{resource.addtipoproducto}"></f:MenuItem>
-				</g:layer>
-			</g:LayoutPanel>
+			<g:ScrollPanel>
+				<g:LayoutPanel>
+					<g:layer left="0.5em" width="10em" top="0.5em" height="3em">
+						<f:MenuItem contentName="VerBalance" text="Ver Balance" imageResource="{resource.addbalance}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="2.3em" height="3em">
+						<f:MenuItem contentName="CrearBalance" text="Crear Balance" imageResource="{resource.addbalance}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="4.1em" height="3em">
+						<f:MenuItem contentName="EditarBalance" text="Editar Balance" imageResource="{resource.addbalance}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="5.9em" height="3em">
+						<f:MenuItem contentName="EliminarBalance" text="Eliminar Balance" imageResource="{resource.addbalance}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="7.7em" height="3em">
+						<f:MenuItem contentName="VerProveedor" text="Ver Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="9.5em" height="3em">
+						<f:MenuItem contentName="CrearProveedor" text="Crear Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="11.3em" height="3em">
+						<f:MenuItem contentName="EditarProveedor" text="Editar Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="12em" top="13.1em" height="3em">
+						<f:MenuItem contentName="EliminarProveedor" text="Eliminar Proveedor" imageResource="{resource.addproveedor}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="14.9em" height="3em">
+						<f:MenuItem contentName="VerSuministro" text="Ver Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="16.7em" height="3em">
+						<f:MenuItem contentName="CrearSuministro" text="Crear Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="18.5em" height="3em">
+						<f:MenuItem contentName="EditarSuministro" text="Editar Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="12em" top="20.3em" height="3em">
+						<f:MenuItem contentName="EliminarSuministro" text="Eliminar Suministro" imageResource="{resource.addsuministro}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="22.1em" height="3em">
+						<f:MenuItem contentName="VerProducto" text="Ver Producto" imageResource="{resource.addproducto}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="23.9em" height="3em">
+						<f:MenuItem contentName="CrearProducto" text="Crear Producto" imageResource="{resource.addproducto}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="25.7em" height="3em">
+						<f:MenuItem contentName="EditarProducto" text="Editar Producto" imageResource="{resource.addproducto}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="27.5em" height="3em">
+						<f:MenuItem contentName="EliminarProducto" text="Eliminar Producto" imageResource="{resource.addproducto}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="10em" top="29.3em" height="3em">
+						<f:MenuItem contentName="VerTipoProducto" text="Ver TipoProducto" imageResource="{resource.addtipoproducto}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="12em" top="31.1em" height="3em">
+						<f:MenuItem contentName="CrearTipoProducto" text="Crear TipoProducto" imageResource="{resource.addtipoproducto}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="12em" top="32.9em" height="3em">
+						<f:MenuItem contentName="EditarTipoProducto" text="Editar TipoProducto" imageResource="{resource.addtipoproducto}"></f:MenuItem>
+					</g:layer>
+					<g:layer left="0.5em" width="12em" top="34.7em" height="3em">
+						<f:MenuItem contentName="EliminarTipoProducto" text="Eliminar TipoProducto" imageResource="{resource.addtipoproducto}"></f:MenuItem>
+					</g:layer>
+				</g:LayoutPanel>
+			</g:ScrollPanel>
 		</g:stack>
 	</g:StackLayoutPanel>
 </ui:UiBinder> 

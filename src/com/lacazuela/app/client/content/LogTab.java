@@ -12,20 +12,20 @@ import com.google.gwt.user.client.ui.Widget;
 
 public class LogTab extends Composite {
 
-	//private static LogTabUiBinder uiBinder = GWT.create(LogTabUiBinder.class);
-
 	private static final Logger log = Logger.getLogger("");
 	
 	interface LogTabUiBinder extends UiBinder<Widget, LogTab> {
 	}
 	
-	private static UiBinder<Widget, LogTab> binder = GWT.create(LogTabUiBinder.class);
+	private static LogTabUiBinder uiBinder = GWT.create(LogTabUiBinder.class);
+	
+	//private static UiBinder<Widget, LogTab> binder = GWT.create(LogTabUiBinder.class);
 
 	@UiField
 	VerticalPanel logArea;
 	
 	public LogTab() {
-		initWidget(binder.createAndBindUi(this));
+		initWidget(uiBinder.createAndBindUi(this));
 		log.addHandler(new HasWidgetsLogHandler(logArea));
 	}
 

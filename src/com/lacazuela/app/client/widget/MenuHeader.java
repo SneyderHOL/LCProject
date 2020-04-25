@@ -12,12 +12,12 @@ import com.google.gwt.user.client.ui.Widget;
 
 public class MenuHeader extends Composite {
 
-	//private static MenuHeaderUiBinder uiBinder = GWT.create(MenuHeaderUiBinder.class);
-
 	interface MenuHeaderUiBinder extends UiBinder<Widget, MenuHeader> {
 	}
 	
-	private static UiBinder<Widget, MenuHeader> binder = GWT.create(MenuHeaderUiBinder.class);
+	private static MenuHeaderUiBinder uiBinder = GWT.create(MenuHeaderUiBinder.class);
+	
+	//private static UiBinder<Widget, MenuHeader> binder = GWT.create(MenuHeaderUiBinder.class);
 
 	@UiField(provided = true)
 	Image image;
@@ -29,7 +29,7 @@ public class MenuHeader extends Composite {
 	public MenuHeader(String text, ImageResource imageResource) {
 		image = new Image(imageResource);
 		html = new HTML(text);
-		initWidget(binder.createAndBindUi(this));
+		initWidget(uiBinder.createAndBindUi(this));
 	}
 
 }
